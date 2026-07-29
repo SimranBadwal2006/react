@@ -1,0 +1,152 @@
+.app-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #0f172a, #312e81);
+  color: white;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #c4b5fd;
+  margin-bottom: 0.75rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  margin: 0 0 1rem;
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.primary-btn {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: white;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-panel {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel-badge {
+  width: fit-content;
+  background: #22c55e;
+  color: #052e16;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.info-card,
+.stat-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.info-card h3 {
+  margin: 0 0 0.5rem;
+  color: #111827;
+}
+
+.info-card p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.stat-card strong {
+  font-size: 1.4rem;
+  color: #4f46e5;
+}
+
+.stat-card span {
+  color: #64748b;
+}
+
+@media (max-width: 800px) {
+  .hero-card,
+  .card-grid,
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    padding: 1.4rem;
+  }
+}
